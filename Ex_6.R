@@ -12,3 +12,9 @@ iris<-read.csv("iris.csv",header = TRUE)
 #print last 2 rows in the last 2 columns 
 iris[149:150,4:5]
 
+#the number of observations for each species 
+
+#rows with Sepal.Width > 3.5
+
+#write the data for setosa into "setosa.csv"
+
