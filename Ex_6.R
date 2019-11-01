@@ -9,3 +9,6 @@ setwd("C:/Users/jcaff/Documents/Notre Dame/senior/fall_19/Biocomputing/R/Tutoria
 #Loading iris.csv into R
 iris<-read.csv("iris.csv",header = TRUE)
 
+#print last 2 rows in the last 2 columns 
+iris[149:150,4:5]
+
