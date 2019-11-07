@@ -31,5 +31,20 @@ dim(virginicaObs)
 #rows with Sepal.Width > 3.5
 Sepal3.5<-iris[iris$Sepal.Width>3.5,]
 head(Sepal3.5)
-#write the data for setosa into "setosa.csv"
 
+#write the data for setosa into "setosa.csv"
+setosa<-iris[iris$Species=="setosa",]
+write.csv(setosa,file = "setosa.csv")
+
+#calculate mean,minimum, and maximum Ptel.Length for virginica
+virginica<-iris[iris$Species=="virginica",]
+virgPetalL<-virginica[,3]
+
+#mean
+mean(virgPetalL) #5.552
+
+#min
+min(virgPetalL) #4.5
+
+#max
+max(virgPetalL) #6.9
